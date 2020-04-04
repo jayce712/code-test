@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      height: 100%;
+    }
+
+    .header {
+      height: 50px;
+      background: #aaa;
+    }
+
+    .container {
+      width: 100%;
+      height: calc(100% - 130px);
+      background: #bbb;
+      overflow: hidden;
+      display: flex;
+    }
+
+    .footer {
+      height: 80px;
+      background: #ccc;
+    }
+
+    .left {
+      width: 150px;
+      height: 100%;
+      background: #a00;
+    }
+
+    .right {
+      width: 100px;
+      height: 100%;
+      background: #00a;
+    }
+
+    .content {
+      display: inline-block;
+      height: 100%;
+      width: calc(100% - 250px);
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">hearder</header>
+  <div class="container">
+    <div class="left">left</div>
+    <div class="content">
+      <p>
+        这是一段很长的文字
+        这是一段很长的文字
+        这是一段很长的文字
+        这是一段很长的文字
+        这是一段很长的文字
+        这是一段很长的文字
+        这是一段很长的文字
+        这是一段很长的文字
+        这是一段很长的文字
+        这是一段很长的文字
+        这是一段很长的文字
+      </p>
+    </div>
+    <div class="right">right</div>
+  </div>
+  <footer class="footer">footer</footer>
+</body>
+
+</html>

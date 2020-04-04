@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .father {
+      height: 100px;
+      border: 1px solid red;
+    }
+
+    .block {
+      width: 100px;
+      height: 50px;
+      border: 1px solid blue;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div>
+    <h2>水平居中</h2>
+    <div class="father">
+      <p style="text-align: center;">行内居中</p>
+    </div>
+    <div class="father">
+      <div class="block" style="margin: 0 auto;">块级居中</div>
+    </div>
+    <div class="father" style="position: relative;">
+      <div class="block" style="position: absolute;left: 50%;margin-left: -50px;">absolute + margin</div>
+    </div>
+    <div class="father" style="position: relative;">
+      <div class="block" style="position: absolute;left: 50%;transform: translateX(-50%)">absolute + transform</div>
+    </div>
+    <div class="father" style="display: flex;justify-content: center;">
+      <div class="block">flex</div>
+    </div>
+  </div>
+  <div>
+    <h2>垂直居中</h2>
+    <div class="father">
+      <p style="line-height:100px;margin: 0;">行内居中</p>
+    </div>
+    <div class="father" style="position: relative;">
+      <div class="block" style="position: absolute;top: 50%;margin-top: -25px;">
+        absolute + margin
+      </div>
+    </div>
+    <div class="father" style="position: relative;">
+      <div class="block" style="position: absolute;top: 50%;transform: translateY(-50%);">
+        absolute + transform
+      </div>
+    </div>
+    <div class="father" style="display: flex;align-items: center;">
+      <div class="block">flex</div>
+    </div>
+  </div>
+  <div>
+    <h2>水平垂直居中</h2>
+    <div class="father" style="position: relative;">
+      <div class="block" style="position: absolute;left:50%;top: 50%;transform: translate(-50%,-50%);">
+        absolute + transform
+      </div>
+    </div>
+    <div class="father" style="display: flex;justify-content: center;align-items: center;">
+      <div class="block">flex</div>
+    </div>
+  </div>
+</body>
+
+</html>

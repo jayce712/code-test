@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      height: 100%;
+      /* flex */
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      /* height: 50px; */
+      flex: 0 0 50px;
+      background: #aaa;
+    }
+
+    .container {
+      flex: 1;
+      background: #bbb;
+      display: flex;
+    }
+
+    .footer {
+      /* height: 80px; */
+      flex: 0 0 80px;
+      background: #ccc;
+    }
+
+    .left {
+      /* width: 150px; */
+      flex: 0 0 150px;
+      background: #a00;
+    }
+
+    .right {
+      /* width: 100px; */
+      flex: 0 0 100px;
+      background: #00a;
+    }
+
+    .content {
+      flex: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">hearder</header>
+  <div class="container">
+    <div class="left">left</div>
+    <div class="content">
+      <p>
+        这是一段很长的文字
+        这是一段很长的文字
+        这是一段很长的文字
+        这是一段很长的文字
+        这是一段很长的文字
+        这是一段很长的文字
+        这是一段很长的文字
+        这是一段很长的文字
+        这是一段很长的文字
+        这是一段很长的文字
+        这是一段很长的文字
+      </p>
+    </div>
+    <div class="right">right</div>
+  </div>
+  <footer class="footer">footer</footer>
+</body>
+
+</html>
