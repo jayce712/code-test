@@ -3,7 +3,8 @@
   "scripts": {
     "start": "http-server ./html",
     "test": "jest --passWithNoTests",
-    "test:cov": "jest --passWithNoTests --coverage"
+    "test:cov": "jest --passWithNoTests --coverage",
+    "test:promise": "tsc ./diy/PromiseA.ts --outDir ./lib && promises-aplus-tests lib/promiseA.js"
   },
   "devDependencies": {
     "@types/jest": "^25.1.4",
@@ -13,6 +14,7 @@
     "husky": "^4.2.3",
     "jest": "^25.1.0",
     "lint-staged": "^10.0.8",
+    "promises-aplus-tests": "^2.1.2",
     "ts-jest": "^25.2.1",
     "typescript": "^3.8.3"
   },
